@@ -120,7 +120,7 @@ directories."
     (define-key keymap "e" 'nav-invoke-dired)
     (define-key keymap "f" 'nav-find-files)
     (define-key keymap "g" 'grep-find)
-    (define-key keymap "h" 'nav-jump-to-home)
+    (define-key keymap "h" 'nav-jump-to-workspace)
     (define-key keymap "j" 'nav-jump-to-dir)
     (define-key keymap "m" 'nav-move-file-or-dir)
     (define-key keymap "n" 'nav-make-new-directory)
@@ -535,10 +535,10 @@ This works like a web browser's back button."
   (nav-show-dir ".")
   (nav-restore-cursor-line))
 
-(defun nav-jump-to-home ()
-  "Show home directory in Nav."
+(defun nav-jump-to-workspace ()
+  "Show workspace directory in Nav."
   (interactive)
-  (nav-push-dir "~"))
+  (nav-push-dir "~/workspace"))
 
 (defun nav-jump-to-name (arg)
   (interactive "K")
