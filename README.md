@@ -1,6 +1,8 @@
 emacs-nav: simple file-system navigation
 ========================================
 
+Fork of the Emacs mode for filesystem navigation tweaked for my needs
+
 Nav is a lightweight solution for Emacs users who want something like
 TextMate's file browser, or the Eclipse project view. Unlike these
 two, Nav only shows the contents of a single directory at a time. Nav
