@@ -1,8 +1,6 @@
 emacs-nav: simple file-system navigation
 ========================================
 
-Fork of the Emacs mode for filesystem navigation tweaked for my needs
-
 Nav is a lightweight solution for Emacs users who want something like
 TextMate's file browser, or the Eclipse project view. Unlike these
 two, Nav only shows the contents of a single directory at a time. Nav
@@ -11,6 +9,13 @@ attempt to make a new frame or is hidden. Nav's terminal-friendliness
 comes from running in the frame where it was started, keeping window
 management simple. The Nav key bindings are also simple -- each
 key command is a single keystroke long.
+
+# Fork notes
+
+This is a fork tweaked for my needs, I changed the following:
+
+ * nav-jump-to-home now nav-jump-to-workspace, `cd`s to ~/workspace instead of ~
+ * nav-jump-to-name now accepts more than just one character, so one can jump to files easily
 
 # Install
 Put something like this in your ~/.emacs:

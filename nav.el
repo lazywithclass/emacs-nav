@@ -541,8 +541,8 @@ This works like a web browser's back button."
   (nav-push-dir "~/workspace"))
 
 (defun nav-jump-to-name (arg)
-  (interactive "K")
-  (nav-goto-line 2)
+  (interactive "M")
+  ;; (nav-goto-line 2)
   (let ((nav-search-string (concat "^" arg)))
     (search-forward-regexp nav-search-string)))
 
