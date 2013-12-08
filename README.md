@@ -16,6 +16,7 @@ This is a fork tweaked for my needs, I changed the following:
 
  * nav-jump-to-home now nav-jump-to-workspace, `cd`s to ~/workspace instead of ~
  * nav-jump-to-name now accepts more than just one character, so one can jump to files easily
+ * nav-jump-to-name searches into the whole name for matchings
 
 # Install
 Put something like this in your ~/.emacs:
