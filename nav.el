@@ -542,8 +542,8 @@ This works like a web browser's back button."
 
 (defun nav-jump-to-name (arg)
   (interactive "M")
-  ;; (nav-goto-line 2)
-  (let ((nav-search-string (concat "^" arg)))
+  (nav-goto-line 2)
+  (let ((nav-search-string (concat "^.*" arg)))
     (search-forward-regexp nav-search-string)))
 
 (defun nav-jump-to-dir (dirname)
